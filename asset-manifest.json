@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/accu-weather-app/static/css/main.d14d8b99.chunk.css",
+    "main.js": "/accu-weather-app/static/js/main.9fe06069.chunk.js",
+    "main.js.map": "/accu-weather-app/static/js/main.9fe06069.chunk.js.map",
+    "runtime-main.js": "/accu-weather-app/static/js/runtime-main.5331b601.js",
+    "runtime-main.js.map": "/accu-weather-app/static/js/runtime-main.5331b601.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/accu-weather-app/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.cd8b0449.chunk.js": "/accu-weather-app/static/js/2.cd8b0449.chunk.js",
+    "static/js/2.cd8b0449.chunk.js.map": "/accu-weather-app/static/js/2.cd8b0449.chunk.js.map",
+    "static/js/3.0ca6f156.chunk.js": "/accu-weather-app/static/js/3.0ca6f156.chunk.js",
+    "static/js/3.0ca6f156.chunk.js.map": "/accu-weather-app/static/js/3.0ca6f156.chunk.js.map",
+    "index.html": "/accu-weather-app/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/accu-weather-app/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.d14d8b99.chunk.css.map": "/accu-weather-app/static/css/main.d14d8b99.chunk.css.map",
+    "static/js/2.cd8b0449.chunk.js.LICENSE.txt": "/accu-weather-app/static/js/2.cd8b0449.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5331b601.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.cd8b0449.chunk.js",
+    "static/css/main.d14d8b99.chunk.css",
+    "static/js/main.9fe06069.chunk.js"
+  ]
+}
