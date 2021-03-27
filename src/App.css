@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App {
+    text-align: center;
+    background-color:#e8fafd;
+    font-size: 16px;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    margin-top: 8rem;
+    position: relative;
+    border-radius: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container {
+    font-family: monospace;
+    font-size: 16px;
+    background-image: linear-gradient(#56c9efc9, #5eaee6);
+    width: 690px !important;
+    height: 60%;
+    margin-top:7rem;
+    border-radius: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .top-weather {
+    border-bottom: solid 0.8px gray;
   }
-}
+  
+  .small-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 2px;
+  }
+  
+  .search-bar {
+    position: absolute;
+    width: 30%;
+    right: 1rem;
+    top: 1.7rem;
+  }
+  
+  .single-day :hover {
+    background-color: #1c9cf6;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #1c9cf6;
+    border-radius: 10px;
+  }
+  
