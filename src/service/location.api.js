@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-export const getCurrentLocation = async (apiKey, ipAdrress) => {
-    const url = `http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=${apiKey}&q=${ipAdrress}`;
+export const getCurrentLocation = async (apiKey) => {
+    const tracedIP = await axios.get('https://www.cloudflare.com/cdn-cgi/trace');
+    const toSplitStr = tracedIP.data.replace(/(\r\n|\n|\r)/gm, ",");
+    const subStr = toSplitStr.substring(toSplitStr.indexOf('ip'));
+    const ipAddress = subStr.substring(3, subStr.indexOf(','))
+    
+    const url = `http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=${apiKey}&q=${ipAddress}`;
     try {
         const res = await axios.get(url);
         return {

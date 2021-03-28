@@ -14,9 +14,10 @@ function App() {
   const [weatherForcast, setWeatherForcast] = useState([]);
 
   useEffect(() => {
+    document.title = 'Hanu-IWS Weather';
     async function fetchInitialData() {
       const cities = await getTopCities(environment.apiKey);
-      const currentLocation = await getCurrentLocation(environment.apiKey, environment.ipAddress);
+      const currentLocation = await getCurrentLocation(environment.apiKey);
       setLocations(cities);
 
       await weeklyForcast(environment.apiKey, currentLocation.parentCity.Key)

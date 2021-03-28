@@ -19,15 +19,15 @@ export const WeeklyWeatherForcast = ({
                         <Moment format="dddd">{weatherData[selectedDay].Date}</Moment>
 
                         <div className="flex-row bd-highlight">
-                        <img
-                            src={`https://developer.accuweather.com/sites/default/files/${
-                            weatherData[selectedDay].Day.Icon >= 10
-                                ? weatherData[selectedDay].Day.Icon
-                                : "0" + weatherData[selectedDay].Day.Icon
-                            }-s.png`}
-                            alt="weather-icon"
-                        />
-                        <p>{weatherData[selectedDay].Day.IconPhrase}</p>
+                            <img
+                                src={`https://developer.accuweather.com/sites/default/files/${
+                                weatherData[selectedDay].Day.Icon >= 10
+                                    ? weatherData[selectedDay].Day.Icon
+                                    : "0" + weatherData[selectedDay].Day.Icon
+                                }-s.png`}
+                                alt="weather-icon"
+                            />
+                            <p>{weatherData[selectedDay].Day.IconPhrase}</p>
                         </div>
                     </div>
                     </div>
