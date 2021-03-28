@@ -17,6 +17,7 @@ export const WeeklyWeatherForcast = ({
                     <div className="flex-row bd-highlight">
                         <h4>{selectedCity}</h4>
                         <Moment format="dddd">{weatherData[selectedDay].Date}</Moment>
+                        <Moment className="d-block" format="DD/MM/YYYY">{weatherData[selectedDay].Date}</Moment>
 
                         <div className="flex-row bd-highlight">
                             <img

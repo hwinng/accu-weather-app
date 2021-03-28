@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-        <h1 style={{textAlign: 'left', marginLeft: '2rem', paddingTop: '1rem', fontFamily: 'monospace'}}>Weather Forcast</h1>
+        <h1 style={{textAlign: 'left', marginLeft: '2rem', paddingTop: '1rem', fontFamily: 'monospace'}}>Hanu Forcast</h1>
         <CityDropdown
           locations={locations}
           handleOnChange={handleSelectChange}
