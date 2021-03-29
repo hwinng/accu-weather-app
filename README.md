@@ -9,6 +9,6 @@
 ## Screenshot
 ![Home](/src/assets/screenshot/1.png)
 ![SelectCity](/src/assets/screenshot/2.png)
-![ChooseByDay](/src/assets/screenshot/4.png)
+![ChooseByDay](/src/assets/screenshot/3.png)
 ## Demo
 I tried to deploy a demo with github-pages but I got some mixed error content since it is not able to request to http endpoint over https.

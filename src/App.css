@@ -1,6 +1,6 @@
   .App {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 32% 65%;
     max-width: 66.875rem;
     margin-top: 8rem;
     margin-left: auto;
