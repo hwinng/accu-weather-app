@@ -6,9 +6,10 @@
     - Forcast the weather of the next 5 days of current location
     - Forcast the weather of the next 5 days of the most 150 cities in the world.
 
-## Screenshot
-![Home](/src/assets/screenshot/1.png)
-![SelectCity](/src/assets/screenshot/2.png)
-![ChooseByDay](/src/assets/screenshot/3.png)
+## Screenshots
+
+![Home](/src/assets/screenshot/a1.png)
+![SelectCity](/src/assets/screenshot/a2.png)
+![ChooseByDay](/src/assets/screenshot/a3.png)
 ## Demo
 I tried to deploy a demo with github-pages but I got some mixed error content since it is not able to request to http endpoint over https.
