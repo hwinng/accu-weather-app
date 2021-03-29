@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { useEffect, useState } from 'react';
 import { getCurrentLocation, getTopCities, getForcast } from './service';
 import { CityDropdown, WeeklyWeatherForcast } from './components';
+import Aboutme from './components/about-me'
 import { environment } from './environment/environment.local';
 
 
@@ -43,22 +44,28 @@ function App() {
 
   return (
     <div className="App">
-        <h1 style={{textAlign: 'left', marginLeft: '2rem', paddingTop: '1rem', fontFamily: 'monospace'}}>Hanu Forcast</h1>
-        <CityDropdown
-          locations={locations}
-          handleOnChange={handleSelectChange}
-        />
+        <section className="sider">
+          <Aboutme />
+        </section>
+        <section className="weather-app">
+          <h1 style={{textAlign: 'left', marginLeft: '2rem', paddingTop: '1rem', fontFamily: 'monospace'}}>Hanu Forcast</h1>
+          <CityDropdown
+            locations={locations}
+            handleOnChange={handleSelectChange}
+          />
 
-        {weatherForcast.length === 0 
-          ? null 
-          : (
-              <WeeklyWeatherForcast
-                handleDaySelection={handleDaySelection}
-                selectedDay={selectedDay}
-                selectedCity={selectedCity}
-                weatherData={weatherForcast}
-              />
-            )}
+          {weatherForcast.length === 0 
+            ? null 
+            : (
+                <WeeklyWeatherForcast
+                  handleDaySelection={handleDaySelection}
+                  selectedDay={selectedDay}
+                  selectedCity={selectedCity}
+                  weatherData={weatherForcast}
+                />
+              )
+          }
+        </section>
       </div>
   );
 }

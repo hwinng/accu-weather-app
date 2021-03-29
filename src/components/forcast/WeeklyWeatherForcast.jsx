@@ -28,7 +28,7 @@ export const WeeklyWeatherForcast = ({
                                 }-s.png`}
                                 alt="weather-icon"
                             />
-                            <p>{weatherData[selectedDay].Day.IconPhrase}</p>
+                            <span style={{display: 'block', marginBottom: '1rem'}}>{weatherData[selectedDay].Day.IconPhrase}</span>
                         </div>
                     </div>
                     </div>
