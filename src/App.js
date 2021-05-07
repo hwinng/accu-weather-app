@@ -38,7 +38,6 @@ function App() {
   }
 
   const handleDaySelection = e => {
-    console.log(e);
     setSelectedDay(e);
   }
 
@@ -62,6 +61,7 @@ function App() {
                   selectedDay={selectedDay}
                   selectedCity={selectedCity}
                   weatherData={weatherForcast}
+                  locations={locations}
                 />
               )
           }

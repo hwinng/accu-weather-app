@@ -1,9 +1,15 @@
 import axios from 'axios';
 
+/**
+ *
+ * @param {*} apiKey 
+ * @returns an object that holds information of user's location
+ */
 export const getCurrentLocation = async (apiKey) => {
     const tracedIP = await axios.get('https://www.cloudflare.com/cdn-cgi/trace');
     const toSplitStr = tracedIP.data.replace(/(\r\n|\n|\r)/gm, ",");
     const subStr = toSplitStr.substring(toSplitStr.indexOf('ip'));
+
     const ipAddress = subStr.substring(3, subStr.indexOf(','))
     
     const url = `http://dataservice.accuweather.com/locations/v1/cities/ipaddress?apikey=${apiKey}&q=${ipAddress}`;
@@ -21,6 +27,11 @@ export const getCurrentLocation = async (apiKey) => {
     }
 }
 
+/**
+ * 
+ * @param {*} apiKey 
+ * @returns return an array of 150 top cities in the world
+ */
 export const getTopCities = async(apiKey) => {
     const url = `http://dataservice.accuweather.com/locations/v1/topcities/150?apikey=${apiKey}`;
     try {
